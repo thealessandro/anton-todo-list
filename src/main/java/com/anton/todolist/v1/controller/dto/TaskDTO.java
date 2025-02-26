@@ -5,17 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-import java.util.Set;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ToDoDTO {
+public class TaskDTO {
 
-    private String title;
-    private LocalDateTime created;
-    private LocalDateTime updated;
-    private Set<TaskDTO> tasks;
+    private String description;
+    private Boolean done;
 }
